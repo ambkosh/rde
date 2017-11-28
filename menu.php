@@ -1,6 +1,10 @@
 <?php
-$title = "r/de stats"
-
+$title = "r/de stats";
+$menuItems = array(
+    1 => "First Item",
+    2 => "Second Item",
+    3 => "Third Item"
+)
 ?>
 
 <!DOCTYPE html>
@@ -13,16 +17,10 @@ $title = "r/de stats"
 </head>
 <body>
 
-<div id="menu">
-    <ul>
-        <li>
-            First item
-        </li>
-        <li>
-            Second item
-        </li>
-        <li>
-            Third item
-        </li>
-    </ul>
-</div>
+<ul>
+    <?php
+    foreach ($menuItems as $item) {
+        echo "<li>$item</li>";
+    }
+    ?>
+</ul>
