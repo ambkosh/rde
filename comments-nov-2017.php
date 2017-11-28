@@ -1,5 +1,6 @@
 <?php
- include 'menu.php';
+ $title = "first";
+ include 'header.php';
 ?> 
 
 <p>Hello World part one!</p>
