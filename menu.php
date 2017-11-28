@@ -1,9 +1,9 @@
 <?php
 $title = "r/de stats";
 $menuItems = array(
-    1 => "First Item",
-    2 => "Second Item",
-    3 => "Third Item"
+    array(title => "First Item", url => "first.php"),
+    array(title => "Second Item", url => "second.php"),
+    array(title => "Third Item", url => "third.php")
 )
 ?>
 
@@ -20,7 +20,7 @@ $menuItems = array(
 <ul>
     <?php
     foreach ($menuItems as $item) {
-        echo "<li>$item</li>";
+        echo "<li> <a href=$item[url]> $item[title] </a> </li>";
     }
     ?>
 </ul>

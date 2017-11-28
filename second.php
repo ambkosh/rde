@@ -2,9 +2,7 @@
  include 'menu.php';
 ?> 
 
-<?php
-  include 'content.php'
-?>
+<p>Hello World part two!</p>
 
  </body>
 </html>
