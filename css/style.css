@@ -1,7 +1,11 @@
 body {
-    background-color: #e1e3e8
+    background-color: #fafafa
 }
 
 #menu {
     background-color: rgb(238, 238, 238);
+}
+
+#maincontent {
+    padding: 20px
 }
