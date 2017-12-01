@@ -1,11 +1,232 @@
-body {
-    background-color: #fafafa
-}
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
 
-#menu {
-    background-color: rgb(238, 238, 238);
-}
-
-#maincontent {
-    padding: 20px
-}
+ body {
+    overflow-x: hidden;
+  }
+  
+  /* .bar rect {
+    fill: steelblue;
+  } */
+  
+  svg {
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .table {
+    padding:10px;
+    margin:0 auto;
+    margin-top:40px;
+    width:1000px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+  } 
+  
+  .tableheading th {
+    background-color: #dfdfdf;
+    width:500px;
+  }
+  
+  td text {
+    font-size: 13px;
+  }
+  
+  th text {
+    font-size: 13px;
+  }
+  
+  .bar text {
+    fill: #fff;
+    font: 10px sans-serif;
+  }
+  
+  .nonactivebar {
+    opacity: 1;
+  }
+  
+  .activebar {
+    opacity: 1;
+    fill: #ed9407 !important;
+  }
+  
+  #beschreibung {
+    width:1000px;
+    display: block;
+    margin:0 auto;
+    margin-bottom: 50px;
+    line-height: 10px;
+    padding-block-start: auto;
+  }
+  
+  #beschreibung h2 {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  #items {
+    display: block;
+    margin:0 auto;
+  }
+  
+  #items p {
+    text-align: left;
+  }
+  
+  #optionen {
+    line-height: 15px;
+  }
+  
+  #wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  
+  #wrapper.toggled {
+    padding-left: 250px;
+  }
+  
+  #menu-toggle {
+    margin-bottom: 10px;
+    background-color: black;
+    min-width: 300px;
+    color: white;
+    height:30px;
+  /*   margin-top: -30px;
+    margin-left: -15px; */
+  }
+  
+  #menu-toggle a {
+    color: #999999;
+    display: block;
+  }
+  
+  #menu-background {
+    padding-top: 3px;
+    padding-left: 17px;
+    height: 30px;
+    width: 80px;
+  }
+  
+  #menu-background:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  #menu-background a {
+    display: block;
+  }
+  
+  #menu-background a:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+  }
+  
+  #page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+  }
+  
+  #wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+  }
+  
+  
+  /* Sidebar Styles */
+  
+  .sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+  }
+  
+  .sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+  }
+  
+  .sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .sidebar-nav li a:active, .sidebar-nav li a:focus {
+    text-decoration: none;
+  }
+  
+  .sidebar-nav>.sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+  }
+  
+  .sidebar-nav>.sidebar-brand a {
+    color: #999999;
+  }
+  
+  .sidebar-nav>.sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+  }
+  
+  @media(min-width:768px) {
+    #wrapper {
+      padding-left: 0;
+    }
+    #wrapper.toggled {
+      padding-left: 250px;
+    }
+    #sidebar-wrapper {
+      width: 0;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+      width: 250px;
+    }
+    #page-content-wrapper {
+      padding: 0px;
+      position: relative;
+    }
+    #wrapper.toggled #page-content-wrapper {
+      position: relative;
+      margin-right: 0;
+    }
+  }
+  

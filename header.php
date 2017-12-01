@@ -2,7 +2,9 @@
 $menuItems = array(
     array(title => "Comments November 2017", url => "comments-nov-2017.php"),
     array(title => "Submissions November 2017", url => "submissions-nov-2017.php")
-)
+);
+
+$home = "index.php";
 ?>
 
 <!DOCTYPE html>
@@ -11,26 +13,38 @@ $menuItems = array(
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.css"/>
+    <!-- datatables css Bootstrap included -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4-4.0.0-beta/dt-1.10.16/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/sandstone/bootstrap.min.css"/> 
 
+    
     <title><?php echo $title ?></title>
 </head>
 <body>
 
 
-<div id="menu">
-    <ul>
-        <?php
-        foreach ($menuItems as $item) {
-            echo "<li> <a href=$item[url]> $item[title] </a> </li>";
-        }
-        ?>
+<div id="wrapper">
+
+<div id="sidebar-wrapper">
+    <ul id="menu" class="sidebar-nav" >
+            <h1 class="navbar-brand"><a href=<?php echo $home ?>> r/de stats </h1>
+            <?php
+            foreach ($menuItems as $item) {
+                echo "<li> <a href=$item[url]> $item[title] </a> </li>";
+            }
+            ?>
     </ul>
+</div> <!-- /#sidebar-wrapper -->
+
+
+<div id="page-content-wrapper">
+
+<div id="menu-toggle">
+    <div id="menu-background"> 
+        <a href="#menu-toggle">Menü</a>
+    </div>
 </div>
+
