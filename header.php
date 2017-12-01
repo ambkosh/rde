@@ -20,6 +20,9 @@ $home = "index.php";
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4-4.0.0-beta/dt-1.10.16/datatables.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/sandstone/bootstrap.min.css"/> 
 
+    <!-- Jquery for the side menu toggle -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
     
     <title><?php echo $title ?></title>
 </head>
@@ -30,7 +33,7 @@ $home = "index.php";
 
 <div id="sidebar-wrapper">
     <ul id="menu" class="sidebar-nav" >
-            <h1 class="navbar-brand"><a href=<?php echo $home ?>> r/de stats </h1>
+            <li class="sidebar-brand"><a href=<?php echo $home ?>> r/de stats </li>
             <?php
             foreach ($menuItems as $item) {
                 echo "<li> <a href=$item[url]> $item[title] </a> </li>";

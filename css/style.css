@@ -93,7 +93,6 @@
   }
   
   #menu-toggle {
-    margin-bottom: 10px;
     background-color: black;
     min-width: 300px;
     color: white;
@@ -108,7 +107,7 @@
   }
   
   #menu-background {
-    padding-top: 3px;
+    padding-top: 6px;
     padding-left: 17px;
     height: 30px;
     width: 80px;

@@ -3,11 +3,8 @@
  include 'header.php';
 ?> 
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.16/datatables.min.js"></script>
-
-<script type="text/javascript" src="script/tablesubmitter.js"></script>
+<script type="text/javascript" src="script/tablecomments.js"></script>
 
 
 
@@ -17,18 +14,8 @@
         </table>
     </div>
 
+<?php
+ $title = "first";
+ include 'footer.php';
+?> 
 
-
-</div> <!-- page page-content-wrapper close --> 
-</div> <!-- wrapper close -->
-<script>
-
-    window.onload = $("menu-toogle").toggleClass("toggled");
-
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-</script>
- </body>
-</html>
