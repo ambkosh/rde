@@ -1,5 +1,5 @@
 <?php
- $title = "first";
+ $title = "Beiträge";
  include 'header.php';
 ?> 
 
@@ -7,12 +7,19 @@
 <script type="text/javascript" src="script/tableposts.js"></script>
 
 
+<div id="maincontent" class="container-fuid" style="line-height:1;">   
 
+    <div id="beschreibung" style="margin-bottom: 50px" style="line-height:0.5;">
+        <h2>Beiträge November 2017</h2><br/>
+        <p>Datum von: 2017.11.01</p>
+        <p>Datum bis: 2017.11.30</p>
+        <p>Anzahl Beiträge: 4314</p>        
+    </div>    
 
-    <div id="maincontent" class="container-fuid" style="line-height:1;">    
-        <table id="dtable" class="display table">
-        </table>
-    </div>
+    <table id="dtable" class="display table">
+    </table>
+
+</div>
 
 <?php
 $title = "first";

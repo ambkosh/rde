@@ -20,10 +20,10 @@ $(document).ready(function() {
                 { data: "avg_score", title:"Avg Score" },
                 { data: "num_comments", title:"Kommentare" },
                 { data: "top_domain", title:"Top Domain" },
-                { data: "domain_freq", title:"Post in Top Domain" },
+                { data: "domain_freq", title:"Posts in Top Domain" },
                 { data: "perc_domain", title:"% Top Domain" },
                 { data: "top_flair", title:"Top flair" },
-                { data: "flair_freq", title:"Post in Top Flair" },
+                { data: "flair_freq", title:"Posts in Top Flair" },
                 { data: "perc_flair", title:"% Top Flair" },
                 { data: "avg_words_title", title:"Avg Words" }        
                 

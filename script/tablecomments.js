@@ -14,17 +14,17 @@ $(document).ready(function() {
             ],
             "columns": [
                 { data: null , title: "Index"},
-                { data: "author", title:"Autor" },  
+                { data: "author", title:"Author" },  
                 { data: "total_comments", title:"Comments" },
                 { data: "total_score", title:"Score" },
                 { data: "avg_score", title:"Avg Score" },
-                { data: "controversiality", title:"Controversiality" },
+                { data: "controversiality", title:"Avg Controversiality" },
                 { data: "replies", title:"Replies" },
                 { data: "top_domain", title:"Top Domain" },
-                { data: "domain_freq", title:"Post in Top Domain" },
+                { data: "domain_freq", title:"Comments in Top Domain" },
                 { data: "perc_domain", title:"% Top Domain" },
                 { data: "top_flair", title:"Top flair" },
-                { data: "flair_freq", title:"Post in Top Flair" },
+                { data: "flair_freq", title:"Comments in Top Flair" },
                 { data: "perc_flair", title:"% Top Flair" },
                 { data: "avg_words", title:"Avg Words" }        
                 
