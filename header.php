@@ -1,5 +1,6 @@
 <?php
 $menuItems = array(
+    array(title => "Birth of a Meme", url => "meme-birth.php"),
     array(title => "Comments November 2017", url => "comments-nov-2017.php"),
     array(title => "Submissions November 2017", url => "submissions-nov-2017.php")
 );
@@ -22,6 +23,9 @@ $home = "index.php";
 
     <!-- Jquery for the side menu toggle -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Vue.js for the vue-app in the content -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
 
     
     <title><?php echo $title ?></title>
