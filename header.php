@@ -1,6 +1,8 @@
 <?php
 $menuItems = array(
-    array(title => "Birth of a Meme", url => "meme-birth.php"),
+    array(title => "Histogramm 2017", url => "histogramm2017.php"),
+    array(title => "Kommentare 2017", url => "comments2017.php"),
+    array(title => "Submissions 2017", url => "submissions2017.php"),    
     array(title => "Comments November 2017", url => "comments-nov-2017.php"),
     array(title => "Submissions November 2017", url => "submissions-nov-2017.php")
 );
